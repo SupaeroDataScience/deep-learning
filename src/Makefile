@@ -13,7 +13,7 @@ sync:
 	bash sync.sh
 
 deploy:
-	git checkout master
+	git checkout main
 	mkdocs gh-deploy
 	cd reveal; reveal-md . \
         --template static/template/reveal.html \
@@ -26,7 +26,7 @@ deploy:
 	git add ../slides
 	git commit -m 'reveal update'
 	git push origin gh-pages
-	git checkout master
+	git checkout main
 
 clean:
 	rm -rf site

@@ -10,8 +10,8 @@ theme:
   palette:
     primary: light blue
     accent: light blue
-  logo: 'https://raw.githubusercontent.com/SupaeroDataScience/deep-learning/master/src/favicon.ico'
-  favicon: 'https://raw.githubusercontent.com/SupaeroDataScience/deep-learning/master/src/favicon.ico'
+  logo: 'https://raw.githubusercontent.com/SupaeroDataScience/deep-learning/main/src/favicon.ico'
+  favicon: 'https://raw.githubusercontent.com/SupaeroDataScience/deep-learning/main/src/favicon.ico'
   features:
     - toc.autohide
 
@@ -22,7 +22,6 @@ nav:
 - Artificial Neural Networks: ANN.md
 - Deep Learning: deep.md
 - CNNs for Imagery, pt 1: CNN.md
-- CNNs for Imagery, pt 2: CNN.md
 - RNNs: RNN.md
 - NLP: NLP.md
 - GANs: GAN.md
