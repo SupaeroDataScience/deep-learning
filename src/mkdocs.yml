@@ -1,0 +1,44 @@
+site_name: Deep Learning
+site_description: Deep Learning section of the Algorithms in Machine Learning class at ISAE-Supaero
+site_url: https://supaerodatascience.github.io/deep-learning/
+site_dir: site
+strict: false
+use_directory_urls: false
+
+theme:
+  name: 'material'
+  palette:
+    primary: light blue
+    accent: light blue
+  logo: 'https://raw.githubusercontent.com/SupaeroDataScience/deep-learning/master/src/favicon.ico'
+  favicon: 'https://raw.githubusercontent.com/SupaeroDataScience/deep-learning/master/src/favicon.ico'
+  features:
+    - toc.autohide
+
+repo_name: SupaeroDataScience/deep-learning
+repo_url: https://github.com/SupaeroDataScience/deep-learning
+
+nav:
+- Artificial Neural Networks: ANN.md
+- Deep Learning: deep.md
+- CNNs for Imagery, pt 1: CNN.md
+- CNNs for Imagery, pt 2: CNN.md
+- RNNs: RNN.md
+- NLP: NLP.md
+- GANs: GAN.md
+- Dimensionality Reduction: DR.md
+
+markdown_extensions:
+- markdown.extensions.codehilite:
+    guess_lang: false
+- toc:
+    permalink: 🔗
+- admonition
+- codehilite
+- extra
+- attr_list
+- pymdownx.details
+- pymdownx.superfences
+
+plugins:
+- search
