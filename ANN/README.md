@@ -24,6 +24,9 @@ with sigmoid activation functions. The slides for that proof are here:
 [This online book](http://neuralnetworksanddeeplearning.com/chap4.html) has a
 nice interactive visualization of this property of neural networks.
 
+[The deep learning book](https://www.deeplearningbook.org/) is fully available
+online and contains many great examples. Notebook versions of those examples are
+available [here](https://github.com/hadrienj/deepLearningBook-Notes)
 
 Stanford CS229 Lectures 11 and 12 introduce ANNs, backpropagation, and gradient
 descent, with lecture 12 going further in depth on how to resolve common
