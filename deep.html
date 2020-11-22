@@ -206,9 +206,38 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Deep Learning
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
     <a href="deep.html" class="md-nav__link md-nav__link--active">
       Deep Learning
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#additional-resources" class="md-nav__link">
+    Additional Resources
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -290,6 +319,21 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#additional-resources" class="md-nav__link">
+    Additional Resources
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -310,6 +354,28 @@
 <li><a href="https://supaerodatascience.github.io/deep-learning/">Home</a></li>
 <li><a href="https://github.com/SupaeroDataScience/deep-learning/">Github repository</a></li>
 </ul>
+<p>In this class, we construct simple deep ANNs using the PyTorch library on the Fashion MNIST example.</p>
+<p><a href="https://github.com/SupaeroDataScience/deep-learning/blob/main/deep/Deep%20Learning.ipynb">Notebook</a></p>
+<p>Instead of calculating backpropagation by hand as in <a href="https://supaerodatascience.github.io/deep-learning/ANN.html">the first
+class</a>, this class
+uses automatic differentiation built in to PyTorch. This is built on the
+<a href="https://pytorch.org/docs/stable/notes/autograd.html">autograd</a> package which
+has its own
+<a href="https://pytorch.org/tutorials/beginner/blitz/autograd_tutorial.html">tutorial</a>.</p>
+<p>One important concept is convolutional neural network layers. The Stanford
+CS231N class has a good interactive
+<a href="https://cs231n.github.io/convolutional-networks/">demonstration</a> of
+convolution.</p>
+<p>To facilitate the use of Torch, we introduce
+<a href="https://github.com/pytorch/ignite">ignite</a> at the end of class. An example of
+using ignite is given in <a href="https://github.com/SupaeroDataScience/deep-learning/blob/main/deep/Pytorch%20Ignite.ipynb">this
+notebook</a></p>
+<h2 id="additional-resources">Additional Resources<a class="headerlink" href="#additional-resources" title="Permanent link">🔗</a></h2>
+<p><a href="https://www.deeplearningbook.org/">The deep learning book</a> is fully available
+online and contains many great examples. Notebook versions of those examples are
+available <a href="https://github.com/hadrienj/deepLearningBook-Notes">here</a>. <a href="https://www.deeplearningbook.org/contents/convnets.html">Chapter
+9</a> specifically covers
+convolutional neural networks.</p>
                 
               
               
