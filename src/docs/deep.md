@@ -17,7 +17,9 @@ has its own
 One important concept is convolutional neural network layers. The Stanford
 CS231N class has a good interactive
 [demonstration](https://cs231n.github.io/convolutional-networks/) of
-convolution.
+convolution. [This
+page](https://github.com/vdumoulin/conv_arithmetic/blob/master/README.md) shows
+demonstrations of stride, padding, and dilation.
 
 To facilitate the use of Torch, we introduce
 [ignite](https://github.com/pytorch/ignite) at the end of class. An example of

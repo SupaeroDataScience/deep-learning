@@ -14,3 +14,8 @@ class DropoutNet(nn.Module):
         x = self.fc2(x)
         x = self.fc3(x)
         return x
+
+
+net = DropoutNet()
+train_history, valid_history = train(net)
+plot_train_val(train_history, valid_history)
