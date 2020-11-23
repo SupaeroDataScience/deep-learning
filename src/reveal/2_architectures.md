@@ -102,6 +102,7 @@ https://github.com/pytorch/vision/blob/master/torchvision/models/googlenet.py
 ## ResNet
 
 <img src="static/img/resnet.png">
+<img src="static/img/resnet_vgg.png">
 
 Residual Networks use skip or shortcut connections, unweighted identity
 functions, to pass information from one part of the newtork to a later part.
@@ -112,6 +113,36 @@ data down-stream.
 He, Kaiming, et al. "Deep residual learning for image recognition." Proceedings of the IEEE conference on computer vision and pattern recognition. 2016.
 
 https://github.com/pytorch/vision/blob/master/torchvision/models/resnet.py
+
+<!--s-->
+
+## Differentiable Architecture Search
+
+<img src="static/img/darts.png">
+
+Neural Architecture Search, the automatic research for architectures, is growing
+as a research field. Better networks than ResNet or VGG have been found with
+these method for the CIFAR and ImageNet benchmarks.
+
+Liu, Hanxiao, Karen Simonyan, and Yiming Yang. "DARTS: Differentiable
+Architecture Search." International Conference on Learning
+Representations. 2018. [pdf](https://arxiv.org/pdf/1806.09055.pdf)
+
+<!--s-->
+
+## NSGA-Net
+
+<img src="static/img/nsganet.png" width="50%" height=auto>
+
+Evolutionary algorithms are one popular approach to neural architecture search,
+such as NSGA-Net. Important objectives in NAS are to increase model accuracy
+while reducing complexity, measured by training time and number of parameters.
+
+Lu, Zhichao, et al. "Nsga-net: neural architecture search using multi-objective
+genetic algorithm." Proceedings of the Genetic and Evolutionary Computation
+Conference. 2019. [code](https://github.com/ianwhale/nsga-net)
+
+<!--s-->
 
 ## Exercise
 

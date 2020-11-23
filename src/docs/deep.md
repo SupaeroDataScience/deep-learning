@@ -7,6 +7,8 @@ In this class, we construct simple deep ANNs using the PyTorch library on the Fa
 
 [Notebook](https://github.com/SupaeroDataScience/deep-learning/blob/main/deep/Deep%20Learning.ipynb)
 
+[Neural Architecture Slides](https://supaerodatascience.github.io/deep-learning/slides/2_architectures.html)
+
 Instead of calculating backpropagation by hand as in [the first
 class](https://supaerodatascience.github.io/deep-learning/ANN.html), this class
 uses automatic differentiation built in to PyTorch. This is built on the
