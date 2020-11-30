@@ -21,7 +21,7 @@ repo_url: https://github.com/SupaeroDataScience/deep-learning
 nav:
 - Artificial Neural Networks: ANN.md
 - Deep Learning: deep.md
-- CNNs for Imagery: CNN.md
+- Deep Learning for Computer Vision: vision.md
 - RNNs: RNN.md
 - NLP: NLP.md
 - GANs: GAN.md
