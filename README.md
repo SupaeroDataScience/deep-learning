@@ -26,8 +26,8 @@ Schedule | | |
 | --- | --- | --- |
 17/11 | [Artificial Neural Networks](ANN.html) | ANNs, backpropagation, Stochastic Gradient Descent |
 23/11 | [Deep Learning](deep.html) | layers, convolution, architectures, training |
-30/11 | [CNNs for Imagery, pt 1](CNN.html) | Convolutional Neural Networks, satellite imagery |
-01/12 | [CNNs for Imagery, pt 2](CNN.html) | |
+30/11 | [Deep Learning for Computer Vision, pt 1](vision.html) | Convolutional Neural Networks, satellite imagery |
+01/12 | [Deep Learning for Computer Vision, pt 2](vision.html) | |
 07/12 | [RNNs](RNN.html) | Recurrent Neural Networks, LSTM, GRU |
 08/12 | [NLP](NLP.html) | Natural Language Processing, Transformers |
 15/12 | [GANs](GAN.html) | Generative Adversarial Networks, CycleGAN |
