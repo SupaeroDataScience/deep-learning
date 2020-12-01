@@ -1,0 +1,6 @@
+sklearn
+nltk
+gensim
+rasa==1.6
+nest-asyncio
+jupyter
