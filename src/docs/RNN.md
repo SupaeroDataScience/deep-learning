@@ -7,6 +7,13 @@
 
 ## Additional Resources
 
+[Time series
+forecasting](https://www.tensorflow.org/tutorials/structured_data/time_series)
+tutorial in Tensorflow.
+
+Stanford's CS231n lecture on Recurrent Neural Networks, covering RNNs, backpropagation through time, and LSTMs.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6niqTuYFZLQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 [The deep learning book](https://www.deeplearningbook.org/) is fully available
 online and contains many great examples. Notebook versions of those examples are
 available [here](https://github.com/hadrienj/deepLearningBook-Notes). [Chapter
