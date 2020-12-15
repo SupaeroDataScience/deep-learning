@@ -12,13 +12,17 @@ of GAN training on MNIST.
 
 ## Additional Resources
 
-[2016 NeurIPS GAN tutorial](https://arxiv.org/pdf/1701.00160.pdf)
-
-[DCGAN Pytorch tutorial](https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html)
-
 DeepMind lecture on GANs which goes further in depth on GAN training, architectures, and applications.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wFsI2WqUfdA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[2016 NeurIPS GAN tutorial](https://arxiv.org/pdf/1701.00160.pdf)
+
+[Unrolling GANs](https://arxiv.org/pdf/1611.02163.pdf) which helps with reducing mode collapse and early convergence.
+
+[Common Problems](https://developers.google.com/machine-learning/gan/problems) in GAN training.
+
+[DCGAN Pytorch tutorial](https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html)
 
 [CycleGAN](https://openaccess.thecvf.com/content_ICCV_2017/papers/Zhu_Unpaired_Image-To-Image_Translation_ICCV_2017_paper.pdf) - Zhu, Jun-Yan, et al. "Unpaired image-to-image translation using cycle-consistent adversarial networks." Proceedings of the IEEE international conference on computer vision. 2017. [code](https://junyanz.github.io/CycleGAN/)
 
