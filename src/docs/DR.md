@@ -7,6 +7,6 @@ The Dimensionality Reduction class materials are [here](https://github.com/jfabr
 
 [Slides](https://raw.githubusercontent.com/jfabrice/ml-class-dimensionality-reduction/master/dimensionality_reduction_class.pdf)
 
-[Empty notebook on Colab](https://github.com/jfabrice/ml-class-dimensionality-reduction/blob/master/dimensionality_reduction_class-empty.ipynb)
+[Notebook on Colab](https://colab.research.google.com/github/jfabrice/ml-class-dimensionality-reduction/blob/master/dimensionality_reduction_class.ipynb)
 
-[Full notebook on Colab](https://github.com/jfabrice/ml-class-dimensionality-reduction/blob/master/dimensionality_reduction_class.ipynb)
+[Empty version](https://colab.research.google.com/github/jfabrice/ml-class-dimensionality-reduction/blob/master/dimensionality_reduction_class-empty.ipynb)
