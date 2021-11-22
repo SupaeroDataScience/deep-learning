@@ -1,3 +1,5 @@
+import torch.nn.functional as F
+
 class ReLUNet(nn.Module):
     def __init__(self):
         super(ReLUNet, self).__init__()

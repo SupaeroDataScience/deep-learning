@@ -17,5 +17,5 @@ class DropoutNet(nn.Module):
 
 
 net = DropoutNet()
-train_history, valid_history = train(net)
+train_history, valid_history = train(net, earlystopping=False)
 plot_train_val(train_history, valid_history)
