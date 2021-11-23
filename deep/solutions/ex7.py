@@ -12,6 +12,7 @@ class DropoutNet(nn.Module):
         x = self.fc1(x)
         x = self.drop(x)
         x = self.fc2(x)
+        x = self.drop(x)
         x = self.fc3(x)
         return x
 
