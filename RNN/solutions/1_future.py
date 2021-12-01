@@ -5,10 +5,7 @@ class RNN(nn.Module):
         self.rnn1 = nn.RNNCell(input_size, hidden_size)
         self.linear = nn.Linear(hidden_size, output_size)
 
-    def forward(self, input, future=0, hidden=None):
-        # accept previous hidden state
-        if hidden == None:
-            hidden = torch.zeros(input.size(0), self.hidden_size, dtype=torch.double)
+    def forward(self, input, hidden, future=0):
         # predict over the different signals
         outputs = []
         for input_t in input.split(1, dim=1):
@@ -21,3 +18,6 @@ class RNN(nn.Module):
             outputs += [output]
         outputs = torch.cat(outputs, dim=1)
         return outputs, hidden
+    
+    def init_hidden(self):
+        return torch.zeros(input.size(0), self.hidden_size, dtype=torch.double)
