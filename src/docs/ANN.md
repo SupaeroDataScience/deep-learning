@@ -7,7 +7,7 @@ This class gives a biological and historical overview of artificial neural
 networks and walks through the theoretical foundations of backpropagation and
 gradient descent, using an example in numpy.
 
-Notebook [source](https://github.com/SupaeroDataScience/deep-learning/blob/main/ANN/Artificial%20neural%20networks.ipynb) [Colab](https://colab.research.google.com/github/SupaeroDataScience/deep-learning/blob/main/ANN/Artificial%20neural%20networks.ipynb)
+Notebook [[source]](https://github.com/SupaeroDataScience/deep-learning/blob/main/ANN/Artificial%20neural%20networks.ipynb) [[Colab]](https://colab.research.google.com/github/SupaeroDataScience/deep-learning/blob/main/ANN/Artificial%20neural%20networks.ipynb)
 
 As an additional exercise, this notebook runs the provided backpropagation
 code, visualizing neural activations and error at each step.

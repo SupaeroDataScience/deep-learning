@@ -5,7 +5,7 @@
 
 In this class, we construct simple deep ANNs using the PyTorch library on the Fashion MNIST example.
 
-Notebook [source](https://github.com/SupaeroDataScience/deep-learning/blob/main/deep/Deep%20Learning.ipynb) [Colab](https://colab.research.google.com/github/SupaeroDataScience/deep-learning/blob/main/deep/Deep%20Learning.ipynb)
+Notebook [[source]](https://github.com/SupaeroDataScience/deep-learning/blob/main/deep/Deep%20Learning.ipynb) [[Colab]](https://colab.research.google.com/github/SupaeroDataScience/deep-learning/blob/main/deep/Deep%20Learning.ipynb)
 
 [Neural Architecture Slides](https://supaerodatascience.github.io/deep-learning/slides/2_architectures.html)
 
