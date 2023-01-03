@@ -10,14 +10,14 @@
       
       
       
-        <link rel="canonical" href="https://supaerodatascience.github.io/deep-learning/ANN.html">
+        <link rel="canonical" href="https://supaerodatascience.github.io/deep-learning/transformers.html">
       
       <link rel="icon" href="https://raw.githubusercontent.com/SupaeroDataScience/deep-learning/main/src/favicon.ico">
       <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.4.2">
     
     
       
-        <title>Artificial Neural Networks - Deep Learning</title>
+        <title>Transformers - Deep Learning</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#artificial-neural-networks" class="md-skip">
+        <a href="#transformers" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Artificial Neural Networks
+              Transformers
             
           </span>
         </div>
@@ -207,52 +207,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Artificial Neural Networks
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="ANN.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="ANN.html" class="md-nav__link">
         Artificial Neural Networks
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#additional-resources" class="md-nav__link">
-    Additional Resources
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -323,11 +282,59 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="transformers.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Transformers
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="transformers.html" class="md-nav__link md-nav__link--active">
         Transformers
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#additional-resources" class="md-nav__link">
+    Additional Resources
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vision-transformers" class="md-nav__link">
+    Vision Transformers
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -395,6 +402,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#vision-transformers" class="md-nav__link">
+    Vision Transformers
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -407,39 +421,41 @@
             <article class="md-content__inner md-typeset">
               
                 
-  <a href="https://github.com/SupaeroDataScience/deep-learning/edit/master/docs/ANN.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/SupaeroDataScience/deep-learning/edit/master/docs/transformers.md" title="Edit this page" class="md-content__button md-icon">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
 
-<h1 id="artificial-neural-networks">Artificial Neural Networks<a class="headerlink" href="#artificial-neural-networks" title="Permanent link">🔗</a></h1>
+<h1 id="transformers">Transformers<a class="headerlink" href="#transformers" title="Permanent link">🔗</a></h1>
 <ul>
 <li><a href="https://supaerodatascience.github.io/deep-learning/">Home</a></li>
 <li><a href="https://github.com/SupaeroDataScience/deep-learning/">Github repository</a></li>
 </ul>
-<p>This class gives a biological and historical overview of artificial neural
-networks and walks through the theoretical foundations of backpropagation and
-gradient descent, using an example in numpy.</p>
-<p>Notebook <a href="https://github.com/SupaeroDataScience/deep-learning/blob/main/ANN/Artificial%20neural%20networks.ipynb">[source]</a> <a href="https://colab.research.google.com/github/SupaeroDataScience/deep-learning/blob/main/ANN/Artificial%20neural%20networks.ipynb">[Colab]</a></p>
-<p>As an additional exercise, this notebook runs the provided backpropagation
-code, visualizing neural activations and error at each step.</p>
-<p><a href="https://github.com/SupaeroDataScience/deep-learning/blob/main/ANN/Visualizing%20Backpropagation.ipynb">Visualizing backprop</a></p>
+<p>This class introduces attention mechanisms in detail and presents the Transformer architecture, with an example in NLP. It builds on the <a href="https://supaerodatascience.github.io/deep-learning/NLP.html">NLP class</a>.</p>
+<p><a href="https://github.com/SupaeroDataScience/deep-learning/blob/main/transformers/Neural_Self_Attention_.ipynb">Attention notebook source</a></p>
+<p><a href="https://colab.research.google.com/github/SupaeroDataScience/deep-learning/blob/main/transformers/Neural_Self_Attention_.ipynb">Attention notebook on Colab</a></p>
+<p><a href="https://github.com/SupaeroDataScience/deep-learning/blob/main/transformers/Transformer_Architecture.ipynb">Transformer notebook source</a></p>
+<p><a href="https://colab.research.google.com/github/SupaeroDataScience/deep-learning/blob/main/transformers/Transformer_Architecture.ipynb">Transformer notebook on Colab</a></p>
 <h2 id="additional-resources">Additional Resources<a class="headerlink" href="#additional-resources" title="Permanent link">🔗</a></h2>
-<p>In class we present a Universal Approximation Theorem for single-layer networks
-with sigmoid activation functions. The slides for that proof are here:
-<a href="UniversalApproximationTheorem.pdf">Universal Approximation Theorem</a></p>
-<p><a href="http://neuralnetworksanddeeplearning.com/chap4.html">This online book</a> has a
-nice interactive visualization of this property of neural networks.</p>
-<p><a href="https://www.deeplearningbook.org/">The deep learning book</a> is fully available
-online and contains many great examples. Notebook versions of those examples are
-available <a href="https://github.com/hadrienj/deepLearningBook-Notes">here</a></p>
-<p>Stanford CS229 Lectures 11 and 12 introduce ANNs, backpropagation, and gradient
-descent, with lecture 12 going further in depth on how to resolve common
-training problems in ANNs.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MfIjxPh6Pys" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zUazLXZZA2U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<ul>
+<li><a href="https://jalammar.github.io/illustrated-transformer/">The Illustrated Transformer</a></li>
+<li>Vaswani, Ashish, et al. "Attention is all you need." Advances in Neural Information Processing Systems 30, 2017. <a href="https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf">pdf</a></li>
+<li>Brown, Tom, et al. "Language models are few-shot learners." Advances in neural information processing systems 33 (2020): 1877-1901. <a href="https://proceedings.neurips.cc/paper/2020/file/1457c0d6bfcb4967418bfb8ac142f64a-Paper.pdf">pdf</a></li>
+<li>Raffel, Colin, et al. "Exploring the limits of transfer learning with a unified text-to-text transformer." J. Mach. Learn. Res. 21.140 (2020): 1-67. <a href="https://jmlr.org/papers/volume21/20-074/20-074.pdf">pdf</a></li>
+<li><a href="https://huggingface.co/t5-base">t5 on HuggingFace</a></li>
+<li><a href="https://www.tensorflow.org/datasets/catalog/c4">c4 dataset</a></li>
+<li>Hoffmann, Jordan, et al. "Training Compute-Optimal Large Language Models." arXiv preprint arXiv:2203.15556 (2022). <a href="https://arxiv.org/pdf/2203.15556.pdf">pdf</a></li>
+<li>Taylor, Ross, et al. "Galactica: A large language model for science." arXiv preprint arXiv:2211.09085 (2022). <a href="https://arxiv.org/pdf/2211.09085.pdf">pdf</a></li>
+<li><a href="https://openai.com/blog/chatgpt/">ChatGPT</a></li>
+</ul>
+<h2 id="vision-transformers">Vision Transformers<a class="headerlink" href="#vision-transformers" title="Permanent link">🔗</a></h2>
+<ul>
+<li>Dosovitskiy, Alexey, et al. "An image is worth 16x16 words: Transformers for image recognition at scale." arXiv preprint arXiv:2010.11929 (2020). <a href="https://arxiv.org/pdf/2010.11929.pdf">pdf</a></li>
+<li><a href="https://paperswithcode.com/method/vision-transformer">ViT - Papers with code</a></li>
+<li>Wightman, Ross, Hugo Touvron, and Hervé Jégou. "Resnet strikes back: An improved training procedure in timm." arXiv preprint arXiv:2110.00476 (2021). <a href="https://arxiv.org/pdf/2110.00476.pdf">pdf</a></li>
+<li>Liu, Zhuang, et al. "A convnet for the 2020s." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2022. <a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Liu_A_ConvNet_for_the_2020s_CVPR_2022_paper.pdf">pdf</a></li>
+</ul>
 
 
 
@@ -457,15 +473,30 @@ training problems in ANNs.</p>
     
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
+        
+        <a href="NLP.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: NLP" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              NLP
+            </div>
+          </div>
+        </a>
+      
       
         
-        <a href="deep.html" class="md-footer__link md-footer__link--next" aria-label="Next: Deep Learning" rel="next">
+        <a href="GAN.html" class="md-footer__link md-footer__link--next" aria-label="Next: GANs" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Deep Learning
+              GANs
             </div>
           </div>
           <div class="md-footer__button md-icon">
