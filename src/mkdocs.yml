@@ -24,6 +24,7 @@ nav:
 - Deep Learning for Computer Vision: vision.md
 - RNNs: RNN.md
 - NLP: NLP.md
+- Transformers: transformers.md
 - GANs: GAN.md
 - Dimensionality Reduction: DR.md
 

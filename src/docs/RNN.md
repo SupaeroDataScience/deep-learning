@@ -3,7 +3,15 @@
 * [Home](https://supaerodatascience.github.io/deep-learning/)
 * [Github repository](https://github.com/SupaeroDataScience/deep-learning/)
 
-Notebook [[source]](https://github.com/SupaeroDataScience/deep-learning/blob/main/RNN/Time-series%20Forecasting.ipynb) [[Colab]](https://colab.research.google.com/github/SupaeroDataScience/deep-learning/blob/main/RNN/Time-series%20Forecasting.ipynb)
+Introduction
+
++ [Notebook](https://github.com/SupaeroDataScience/deep-learning/blob/main/RNN/Introduction_ElmanNets.ipynb)
++ [Colab](https://colab.research.google.com/github/SupaeroDataScience/deep-learning/blob/main/RNN/Introduction_ElmanNets.ipynb)
+
+Time-series Forecasting
+
++ [Notebook](https://github.com/SupaeroDataScience/deep-learning/blob/main/RNN/MainActivity_Time%20series%20forecasting.ipynb)
++ [Colab](https://colab.research.google.com/github/SupaeroDataScience/deep-learning/blob/main/RNN/MainActivity_Time%20series%20forecasting.ipynb)
 
 ## Additional Resources
 
