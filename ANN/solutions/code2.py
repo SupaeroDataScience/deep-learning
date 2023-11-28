@@ -4,4 +4,4 @@
 ypred,zpred = forward_pass(input_X, verbose=True)
 pred = zpred[-1]
 err = np.mean((pred-output_y)**2)
-print("Loss function estimate:",err)
+print("Empirical risk estimate:",err)
