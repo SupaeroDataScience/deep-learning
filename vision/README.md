@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This repository contains the code and documentation of a "Deep Learning practical session" given at ISAE-SUPAERO on December 2nd/3rd 2019 and Nov 30/Dec 1st 2020
+This repository contains the code and documentation of a "Deep Learning practical session" given at ISAE-SUPAERO on December 6th 2023
 
 The introduction slides can be accessed at [this URL website](https://fchouteau.github.io/isae-practical-deep-learning). 
 
