@@ -22,10 +22,10 @@ nav:
 - Artificial Neural Networks: ANN.md
 - Deep Learning: deep.md
 - Deep Learning for Computer Vision: vision.md
+- GANs: GAN.md
 - RNNs: RNN.md
 - NLP: NLP.md
 - Transformers: transformers.md
-- GANs: GAN.md
 - Dimensionality Reduction: DR.md
 
 markdown_extensions:
