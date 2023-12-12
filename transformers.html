@@ -10,7 +10,13 @@
       
       
       
+        <link rel="canonical" href="https://supaerodatascience.github.io/deep-learning/transformers.html">
       
+      
+        <link rel="prev" href="NLP.html">
+      
+      
+        <link rel="next" href="DR.html">
       
       
       <link rel="icon" href="https://raw.githubusercontent.com/SupaeroDataScience/deep-learning/main/src/favicon.ico">
@@ -18,14 +24,14 @@
     
     
       
-        <title>Deep Learning</title>
+        <title>Transformers - Deep Learning</title>
       
     
     
-      <link rel="stylesheet" href="/deep-learning/assets/stylesheets/main.046329b4.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.046329b4.min.css">
       
         
-        <link rel="stylesheet" href="/deep-learning/assets/stylesheets/palette.85d0ee34.min.css">
+        <link rel="stylesheet" href="assets/stylesheets/palette.85d0ee34.min.css">
       
       
 
@@ -44,7 +50,7 @@
       
     
     
-    <script>__md_scope=new URL("/deep-learning/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -68,6 +74,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#transformers" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -80,7 +91,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/deep-learning/." title="Deep Learning" class="md-header__button md-logo" aria-label="Deep Learning" data-md-component="logo">
+    <a href="." title="Deep Learning" class="md-header__button md-logo" aria-label="Deep Learning" data-md-component="logo">
       
   <img src="https://raw.githubusercontent.com/SupaeroDataScience/deep-learning/main/src/favicon.ico" alt="logo">
 
@@ -99,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Transformers
             
           </span>
         </div>
@@ -185,7 +196,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/deep-learning/." title="Deep Learning" class="md-nav__button md-logo" aria-label="Deep Learning" data-md-component="logo">
+    <a href="." title="Deep Learning" class="md-nav__button md-logo" aria-label="Deep Learning" data-md-component="logo">
       
   <img src="https://raw.githubusercontent.com/SupaeroDataScience/deep-learning/main/src/favicon.ico" alt="logo">
 
@@ -213,7 +224,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/deep-learning/ANN.html" class="md-nav__link">
+      <a href="ANN.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -232,7 +243,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/deep-learning/deep.html" class="md-nav__link">
+      <a href="deep.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -251,7 +262,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/deep-learning/vision.html" class="md-nav__link">
+      <a href="vision.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -270,7 +281,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/deep-learning/GAN.html" class="md-nav__link">
+      <a href="GAN.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -289,7 +300,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/deep-learning/RNN.html" class="md-nav__link">
+      <a href="RNN.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -308,7 +319,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/deep-learning/NLP.html" class="md-nav__link">
+      <a href="NLP.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -325,9 +336,29 @@
       
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="/deep-learning/transformers.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Transformers
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="transformers.html" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -336,6 +367,40 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#additional-resources" class="md-nav__link">
+    Additional Resources
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vision-transformers" class="md-nav__link">
+    Vision Transformers
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -346,7 +411,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/deep-learning/DR.html" class="md-nav__link">
+      <a href="DR.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -376,6 +441,30 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#additional-resources" class="md-nav__link">
+    Additional Resources
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vision-transformers" class="md-nav__link">
+    Vision Transformers
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -387,8 +476,47 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+  
+  
+
+
+<h1 id="transformers">Transformers<a class="headerlink" href="#transformers" title="Permanent link">🔗</a></h1>
+<ul>
+<li><a href="https://supaerodatascience.github.io/deep-learning/">Home</a></li>
+<li><a href="https://github.com/SupaeroDataScience/deep-learning/">Github repository</a></li>
+</ul>
+<p>This class introduces attention mechanisms in detail and presents the Transformer architecture, with an example in NLP. It builds on the <a href="https://supaerodatascience.github.io/deep-learning/NLP.html">NLP class</a>.</p>
+<p><a href="https://github.com/SupaeroDataScience/deep-learning/blob/main/transformers/Neural_Self_Attention_.ipynb">Attention notebook source</a></p>
+<p><a href="https://colab.research.google.com/github/SupaeroDataScience/deep-learning/blob/main/transformers/Neural_Self_Attention_.ipynb">Attention notebook on Colab</a></p>
+<p><a href="https://github.com/SupaeroDataScience/deep-learning/blob/main/transformers/Transformer_Architecture.ipynb">Transformer notebook source</a></p>
+<p><a href="https://colab.research.google.com/github/SupaeroDataScience/deep-learning/blob/main/transformers/Transformer_Architecture.ipynb">Transformer notebook on Colab</a></p>
+<h2 id="additional-resources">Additional Resources<a class="headerlink" href="#additional-resources" title="Permanent link">🔗</a></h2>
+<ul>
+<li><a href="https://jalammar.github.io/illustrated-transformer/">The Illustrated Transformer</a></li>
+<li>Vaswani, Ashish, et al. "Attention is all you need." Advances in Neural Information Processing Systems 30, 2017. <a href="https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf">pdf</a></li>
+<li>Brown, Tom, et al. "Language models are few-shot learners." Advances in neural information processing systems 33 (2020): 1877-1901. <a href="https://proceedings.neurips.cc/paper/2020/file/1457c0d6bfcb4967418bfb8ac142f64a-Paper.pdf">pdf</a></li>
+<li>Raffel, Colin, et al. "Exploring the limits of transfer learning with a unified text-to-text transformer." J. Mach. Learn. Res. 21.140 (2020): 1-67. <a href="https://jmlr.org/papers/volume21/20-074/20-074.pdf">pdf</a></li>
+<li><a href="https://huggingface.co/t5-base">t5 on HuggingFace</a></li>
+<li><a href="https://www.tensorflow.org/datasets/catalog/c4">c4 dataset</a></li>
+<li>Hoffmann, Jordan, et al. "Training Compute-Optimal Large Language Models." arXiv preprint arXiv:2203.15556 (2022). <a href="https://arxiv.org/pdf/2203.15556.pdf">pdf</a></li>
+<li>Taylor, Ross, et al. "Galactica: A large language model for science." arXiv preprint arXiv:2211.09085 (2022). <a href="https://arxiv.org/pdf/2211.09085.pdf">pdf</a></li>
+<li><a href="https://openai.com/blog/chatgpt/">ChatGPT</a></li>
+</ul>
+<h2 id="vision-transformers">Vision Transformers<a class="headerlink" href="#vision-transformers" title="Permanent link">🔗</a></h2>
+<ul>
+<li>Dosovitskiy, Alexey, et al. "An image is worth 16x16 words: Transformers for image recognition at scale." arXiv preprint arXiv:2010.11929 (2020). <a href="https://arxiv.org/pdf/2010.11929.pdf">pdf</a></li>
+<li><a href="https://paperswithcode.com/method/vision-transformer">ViT - Papers with code</a></li>
+<li>Wightman, Ross, Hugo Touvron, and Hervé Jégou. "Resnet strikes back: An improved training procedure in timm." arXiv preprint arXiv:2110.00476 (2021). <a href="https://arxiv.org/pdf/2110.00476.pdf">pdf</a></li>
+<li>Liu, Zhuang, et al. "A convnet for the 2020s." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2022. <a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Liu_A_ConvNet_for_the_2020s_CVPR_2022_paper.pdf">pdf</a></li>
+</ul>
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -420,10 +548,10 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "/deep-learning/", "features": ["toc.autohide"], "search": "/deep-learning/assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["toc.autohide"], "search": "assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="/deep-learning/assets/javascripts/bundle.dff1b7c8.min.js"></script>
+      <script src="assets/javascripts/bundle.dff1b7c8.min.js"></script>
       
     
   </body>

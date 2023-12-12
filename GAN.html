@@ -12,8 +12,15 @@
       
         <link rel="canonical" href="https://supaerodatascience.github.io/deep-learning/GAN.html">
       
+      
+        <link rel="prev" href="vision.html">
+      
+      
+        <link rel="next" href="RNN.html">
+      
+      
       <link rel="icon" href="https://raw.githubusercontent.com/SupaeroDataScience/deep-learning/main/src/favicon.ico">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.2.8">
     
     
       
@@ -21,19 +28,17 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.472b142f.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.046329b4.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.08040f6c.min.css">
-        
-          
-          
-          <meta name="theme-color" content="#02a6f2">
-        
+        <link rel="stylesheet" href="assets/stylesheets/palette.85d0ee34.min.css">
       
       
 
+
     
+    
+      
     
     
       
@@ -70,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#generative-adversarial-networks" class="md-skip">
+        <a href="#generative-models" class="md-skip">
           Skip to content
         </a>
       
@@ -82,7 +87,9 @@
     
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="." title="Deep Learning" class="md-header__button md-logo" aria-label="Deep Learning" data-md-component="logo">
       
@@ -90,6 +97,7 @@
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
+      
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
@@ -109,9 +117,12 @@
       </div>
     </div>
     
+      
+    
     
     
       <label class="md-header__button md-icon" for="__search">
+        
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
@@ -120,12 +131,15 @@
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
+        
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
@@ -137,7 +151,7 @@
           <div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
         </div>
       </div>
     </div>
@@ -149,7 +163,7 @@
         <a href="https://github.com/SupaeroDataScience/deep-learning" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     SupaeroDataScience/deep-learning
@@ -179,6 +193,7 @@
                     
 
 
+
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="." title="Deep Learning" class="md-nav__button md-logo" aria-label="Deep Learning" data-md-component="logo">
@@ -193,7 +208,7 @@
       <a href="https://github.com/SupaeroDataScience/deep-learning" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     SupaeroDataScience/deep-learning
@@ -205,14 +220,18 @@
     
       
       
-      
-
   
   
   
     <li class="md-nav__item">
       <a href="ANN.html" class="md-nav__link">
-        Artificial Neural Networks
+        
+  
+  <span class="md-ellipsis">
+    Artificial Neural Networks
+  </span>
+  
+
       </a>
     </li>
   
@@ -220,14 +239,18 @@
     
       
       
-      
-
   
   
   
     <li class="md-nav__item">
       <a href="deep.html" class="md-nav__link">
-        Deep Learning
+        
+  
+  <span class="md-ellipsis">
+    Deep Learning
+  </span>
+  
+
       </a>
     </li>
   
@@ -235,14 +258,18 @@
     
       
       
-      
-
   
   
   
     <li class="md-nav__item">
       <a href="vision.html" class="md-nav__link">
-        Deep Learning for Computer Vision
+        
+  
+  <span class="md-ellipsis">
+    Deep Learning for Computer Vision
+  </span>
+  
+
       </a>
     </li>
   
@@ -250,38 +277,6 @@
     
       
       
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="RNN.html" class="md-nav__link">
-        RNNs
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="NLP.html" class="md-nav__link">
-        NLP
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
   
   
     
@@ -289,19 +284,31 @@
   
     <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
         
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          GANs
+          
+  
+  <span class="md-ellipsis">
+    GANs
+  </span>
+  
+
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="GAN.html" class="md-nav__link md-nav__link--active">
-        GANs
+        
+  
+  <span class="md-ellipsis">
+    GANs
+  </span>
+  
+
       </a>
       
         
@@ -336,14 +343,75 @@
     
       
       
-      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="RNN.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RNNs
+  </span>
+  
 
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="NLP.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NLP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="transformers.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transformers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
   
   
   
     <li class="md-nav__item">
       <a href="DR.html" class="md-nav__link">
-        Dimensionality Reduction
+        
+  
+  <span class="md-ellipsis">
+    Dimensionality Reduction
+  </span>
+  
+
       </a>
     </li>
   
@@ -396,51 +464,32 @@
                 
                   
 
-  <a href="https://github.com/SupaeroDataScience/deep-learning/edit/master/docs/GAN.md" title="Edit this page" class="md-content__button md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
-  </a>
+  
+  
 
 
-<h1 id="generative-adversarial-networks">Generative Adversarial Networks<a class="headerlink" href="#generative-adversarial-networks" title="Permanent link">🔗</a></h1>
+<h1 id="generative-models">Generative Models<a class="headerlink" href="#generative-models" title="Permanent link">🔗</a></h1>
 <ul>
 <li><a href="https://supaerodatascience.github.io/deep-learning/">Home</a></li>
 <li><a href="https://github.com/SupaeroDataScience/deep-learning/">Github repository</a></li>
 </ul>
-<p>In this class, we introduce Generative Adversarial Networks, showing an example
-of GAN training on MNIST.</p>
-<p><a href="https://github.com/SupaeroDataScience/deep-learning/blob/main/GAN/Generative%20Adversarial%20Networks.ipynb">Notebook source</a></p>
-<p><a href="https://colab.research.google.com/github/SupaeroDataScience/deep-learning/blob/main/GAN/Generative%20Adversarial%20Networks.ipynb">Notebook on Colab</a></p>
+<p>In this class, we cover three types of generative models: Variational Autoencoders, Generative Adversarial Networks, and Score-based models (also called diffusion models).</p>
+<p><a href="https://github.com/SupaeroDataScience/deep-learning/blob/main/GAN/Variational_Autoencoders.ipynb">VAEs</a>, <a href="https://colab.research.google.com/github/SupaeroDataScience/deep-learning/blob/main/GAN/Variational_Autoencoders.ipynb">Colab version</a></p>
+<p><a href="https://github.com/SupaeroDataScience/deep-learning/blob/main/GAN/Generative_Adversarial_Networks.ipynb">GANs</a>, <a href="https://colab.research.google.com/github/SupaeroDataScience/deep-learning/blob/main/GAN/Generative_Adversarial_Networks.ipynb">Colab version</a></p>
+<p><a href="https://github.com/SupaeroDataScience/deep-learning/blob/main/GAN/Score_Based_Generative_Modeling.ipynb">Score-based models</a>, <a href="https://colab.research.google.com/github/SupaeroDataScience/deep-learning/blob/main/GAN/Score_Based_Generative_Modeling.ipynb">Colab version</a></p>
 <h2 id="additional-resources">Additional Resources<a class="headerlink" href="#additional-resources" title="Permanent link">🔗</a></h2>
-<p>DeepMind lecture on GANs which goes further in depth on GAN training, architectures, and applications.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wFsI2WqUfdA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<p><a href="https://arxiv.org/pdf/1701.00160.pdf">2016 NeurIPS GAN tutorial</a></p>
-<p><a href="https://arxiv.org/pdf/1611.02163.pdf">Unrolling GANs</a> which helps with reducing mode collapse and early convergence.</p>
-<p><a href="https://developers.google.com/machine-learning/gan/problems">Common Problems</a> in GAN training.</p>
-<p><a href="https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html">DCGAN Pytorch tutorial</a></p>
-<p><a href="https://openaccess.thecvf.com/content_ICCV_2017/papers/Zhu_Unpaired_Image-To-Image_Translation_ICCV_2017_paper.pdf">CycleGAN</a> - Zhu, Jun-Yan, et al. "Unpaired image-to-image translation using cycle-consistent adversarial networks." Proceedings of the IEEE international conference on computer vision. 2017. <a href="https://junyanz.github.io/CycleGAN/">code</a></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/AxrKVfjSBiA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<p><a href="https://openaccess.thecvf.com/content_CVPR_2019/papers/Karras_A_Style-Based_Generator_Architecture_for_Generative_Adversarial_Networks_CVPR_2019_paper.pdf">StyleGAN</a> - Karras, Tero, Samuli Laine, and Timo Aila. "A style-based generator architecture for generative adversarial networks." Proceedings of the IEEE conference on computer vision and pattern recognition. 2019.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kSLJriaOumA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<p><a href="https://thispersondoesnotexist.com/">This person does not exist</a> -
-GAN-generated faces. (<a href="https://thiscatdoesnotexist.com/">cat version</a>)</p>
-<p><a href="https://arxiv.org/pdf/1808.07371.pdf">Everybody Dance Now</a> demonstrates motion transfer in videos.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PCBTZh41Ris" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<p><a href="https://arxiv.org/pdf/2004.11138.pdf">Deepfakes</a>, the application of GANs and
-other deep ANNs to creating modified or generated media, sometimes for harmful and deceptive purposes.</p>
-<p><a href="https://artbreeder.com/">ArtBreeder</a> uses BigGAN and StyleGAN to generate
-images in an iterative optimization process based on evolutionary algorithms.
-<a href="https://github.com/joel-simon/ganbreeder">Ganbreeder</a> is an open-source
-version.</p>
-<p><a href="https://www.deeplearningbook.org/">The deep learning book</a> is fully available
+<ul>
+<li><a href="https://towardsdatascience.com/intuitively-understanding-variational-autoencoders-1bfe67eb5daf">Intuitively Understanding Variational Autoencoders</a></li>
+<li><a href="https://towardsdatascience.com/understanding-variational-autoencoders-vaes-f70510919f73">Understanding Variational Autoencoders (VAEs)</a></li>
+<li><a href="https://www.deeplearningbook.org/">The deep learning book</a> is fully available
 online and contains many great examples. Notebook versions of those examples are
 available <a href="https://github.com/hadrienj/deepLearningBook-Notes">here</a>. <a href="https://www.deeplearningbook.org/contents/generative_models.html">Chapter
 20</a> covers
-generative models and section 20.10.4 specifically covers GANs.</p>
+generative models and section 20.10.4 specifically covers GANs.</li>
+<li>Yang Song, Jascha Sohl-Dickstein, Diederik P. Kingma, Abhishek Kumar, Stefano Ermon, and Ben Poole. "<a href="https://arxiv.org/pdf/2011.13456.pdf">Score-Based Generative Modeling through Stochastic Differential Equations.</a>" International Conference on Learning Representations, 2021.</li>
+<li>Jonathan Ho, Ajay Jain, and Pieter Abbeel. "<a href="https://arxiv.org/pdf/2006.11239.pdf">Denoising diffusion probabilistic models.</a>" Advances in Neural Information Processing Systems. 2020.</li>
+<li>Yang Song, and Stefano Ermon. "<a href="https://arxiv.org/pdf/1907.05600.pdf">Generative modeling by estimating gradients of the data distribution.</a>" Advances in Neural Information Processing Systems. 2019.</li>
+</ul>
 
 
 
@@ -456,42 +505,6 @@ generative models and section 20.10.4 specifically covers GANs.</p>
       </main>
       
         <footer class="md-footer">
-  
-    
-    <nav class="md-footer__inner md-grid" aria-label="Footer" >
-      
-        
-        <a href="NLP.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: NLP" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              NLP
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="DR.html" class="md-footer__link md-footer__link--next" aria-label="Next: Dimensionality Reduction" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Dimensionality Reduction
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -514,10 +527,10 @@ generative models and section 20.10.4 specifically covers GANs.</p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["toc.autohide"], "search": "assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["toc.autohide"], "search": "assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.d6c3db9e.min.js"></script>
+      <script src="assets/javascripts/bundle.dff1b7c8.min.js"></script>
       
     
   </body>

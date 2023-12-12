@@ -2,42 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://supaerodatascience.github.io/deep-learning/index.html</loc>
-         <lastmod>2023-11-27</lastmod>
+         <lastmod>2023-12-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://supaerodatascience.github.io/deep-learning/ANN.html</loc>
-         <lastmod>2023-11-27</lastmod>
+         <lastmod>2023-12-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://supaerodatascience.github.io/deep-learning/DR.html</loc>
-         <lastmod>2023-11-27</lastmod>
+         <lastmod>2023-12-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://supaerodatascience.github.io/deep-learning/GAN.html</loc>
-         <lastmod>2023-11-27</lastmod>
+         <lastmod>2023-12-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://supaerodatascience.github.io/deep-learning/NLP.html</loc>
-         <lastmod>2023-11-27</lastmod>
+         <lastmod>2023-12-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://supaerodatascience.github.io/deep-learning/RNN.html</loc>
-         <lastmod>2023-11-27</lastmod>
+         <lastmod>2023-12-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://supaerodatascience.github.io/deep-learning/deep.html</loc>
-         <lastmod>2023-11-27</lastmod>
+         <lastmod>2023-12-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://supaerodatascience.github.io/deep-learning/transformers.html</loc>
+         <lastmod>2023-12-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://supaerodatascience.github.io/deep-learning/vision.html</loc>
-         <lastmod>2023-11-27</lastmod>
+         <lastmod>2023-12-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
