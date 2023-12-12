@@ -28,6 +28,14 @@ deploy:
 	git push origin gh-pages
 	git checkout main
 
+deploy-noslides:
+	git checkout main
+	mkdocs gh-deploy
+	git checkout gh-pages
+	git commit -m 'reveal update'
+	git push origin gh-pages
+	git checkout main
+
 clean:
 	rm -rf site
 	rm -rf ../slides
