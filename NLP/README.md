@@ -9,6 +9,8 @@
 
 3. [Attention in Seq2Seq](https://github.com/SupaeroDataScience/deep-learning/blob/main/NLP/Neural_Machine_Translation_by_Jointly_Learning_to_Align_and_Translate.ipynb), version [colab](https://colab.research.google.com/github/SupaeroDataScience/deep-learning/blob/main/NLP/Neural_Machine_Translation_by_Jointly_Learning_to_Align_and_Translate.ipynb)
 
+4. Large Language Models and Generative AI [slides](https://github.com/SupaeroDataScience/deep-learning/raw/main/NLP/support/Large_Language_Models_and_Generative_AI.pdf)
+
 ## Additional Resources
 
 - [Text Processing and Classification](https://github.com/SupaeroDataScience/deep-learning/blob/main/NLP/Text%20processing%20and%20Classification.ipynb), version [colab](https://colab.research.google.com/github/SupaeroDataScience/deep-learning/blob/main/NLP/Text%20processing%20and%20Classification.ipynb)
