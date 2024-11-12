@@ -8,10 +8,13 @@ from nltk.corpus import words
 from string import punctuation
 import numpy as np
 from sklearn.utils import shuffle
+
 import nltk
-#nltk.download('stopwords')
-#nltk.download('words')
-#nltk.download('wordnet')
+
+# nltk.download('stopwords')
+# nltk.download('words')
+# nltk.download('wordnet')
+
 
 class LemmaTokenizer(object):
     def __init__(self, remove_non_words=True):
@@ -43,10 +46,11 @@ class spam_data_loader:
         self.feat2word = None
         self.tfidf_transformer = TfidfTransformer()
         self.tfidf = []
-    def load_data(self,email_path=None,verbose=False):
+
+    def load_data(self, data_path="../data/", email_path=None, verbose=False):
         # Define email path
-        if(email_path==None):
-            self.train_dir = '../data/lingspam_public/bare/'
+        if (email_path == None):
+            self.train_dir = data_path + 'lingspam_public/bare/'
             self.email_path = []
             self.email_label = []
             for d in os.listdir(self.train_dir):
