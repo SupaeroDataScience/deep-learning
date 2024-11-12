@@ -1,0 +1,16 @@
+numpy
+scikit-learn
+nltk
+networkx
+ann
+pandas
+numpy
+seaborn
+keras
+
+torch
+torchvision
+ignite
+tensorflow
+spacy
+GPUtil
