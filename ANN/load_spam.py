@@ -82,13 +82,13 @@ class spam_data_loader:
 
     def shuffle_and_split(self, n, feat='tfidf'):
         if feat == 'tfidf':
-            X, y = shuffle(self.tfidf, self.email_label)
+            x, y = shuffle(self.tfidf, self.email_label)
         elif feat == 'wordcount':
-            X, y = shuffle(self.word_count, self.email_label)
+            x, y = shuffle(self.word_count, self.email_label)
         else:
             raise ValueError("The value of the parameter 'feat' should be 'tfidf' or 'wordcount'.")
-        x_train = X[:n, :]
-        x_test = X[n:, :]
+        x_train = x[:n, :]
+        x_test = x[n:, :]
         y_train, y_test = np.split(y,[n])
         return x_train, y_train, x_test, y_test
 
