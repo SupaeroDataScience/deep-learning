@@ -1,10 +1,12 @@
 Evaluation 2024-2025.
 
-**Principe et objectif pédagogique**
+# Principe et objectif pédagogique
+
 Le principe est celui de la co-évaluation et le but est que le temps que vous consacrez à l'évaluation soit un temps où vous continuez à découvrir des choses nouvelles et à approfondir votre maîtrise en ML.
 Le fichier que je vous enverrai très rapidement vous indique, pour chaque étudiant.e, un sujet à traiter. Le but de l'exercice est de rédiger un notebook présentant le sujet, comme si vous le présentiez à vos pairs (étudiant SDD, collègue de travail, client compétent sur le sujet, etc.). On n'apprend jamais aussi bien que quand on explique, c'est donc l'occasion de bien maîtriser un sujet de plus et de monter en compétence collectivement en portant un regard critique sur nos productions respectives. 
 
-**Point de départ**
+# Point de départ
+
 Chaque sujet est associé à une ou deux références en ligne. Ce sont des points de départ, pas des contenus à résumer ! Il est normal que vous lisiez des documents complémentaires, que vous construisiez votre compréhension, que vous fassiez des choix de ce que vous présentez ou non dans votre notebook (voire dans certains cas, que vous fassiez le choix de traiter spécifiquement un aspect du sujet et pas un autre - dans ce cas là, parlez m'en svp).
 
 **Consignes et critères d'évaluation**
