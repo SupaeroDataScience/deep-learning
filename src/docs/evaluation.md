@@ -66,7 +66,7 @@ Pour nous assurer que vous aurez du temps et suite à mon absence de novembre et
 17/01 : consignes et affectation sujets  
 20/01 : demi-journée libérée  
 28/01 : journée complète libérée  
-09/02 : deadline de rendu des notebooks sur [https://openreview.net/group?id=supaerodatascience.github.io/SupaeroSDD/2025/Workshop](https://openreview.net/group?id=supaerodatascience.github.io/SupaeroSDD/2025/Workshop)  
+09/02 : deadline de rendu des notebooks sur [openreview](https://openreview.net/group?id=supaerodatascience.github.io/SupaeroSDD/2025/Workshop)  
 10/02 : demi-journée d'évaluation des notebooks  
 14/02 : deadline pour rendre les évaluations des notebooks  
 06/03 : deadline pour rendre les posters  
