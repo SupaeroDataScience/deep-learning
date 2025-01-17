@@ -27,7 +27,7 @@ nav:
 - NLP: NLP.md
 - Transformers: transformers.md
 - Dimensionality Reduction: DR.md
-- Evaluation: evalation.md
+- Evaluation: evaluation.md
 
 markdown_extensions:
 - markdown.extensions.codehilite:
