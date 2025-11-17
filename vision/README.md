@@ -1,14 +1,14 @@
-# Deep Learning for Computer Vision, practical session at ISAE-SUPAERO
+# Introduction to Convolutional Neural Networks
 
 ## Introduction
 
-This repository contains the code and documentation of a "Deep Learning practical session" given at ISAE-SUPAERO on December 6th 2023
+This repository contains the code and documentation of a "Introduction to CNNs" given at ISAE-SUPAERO on November 18th 2025
 
-The introduction slides can be accessed at [this URL website](https://fchouteau.github.io/isae-practical-deep-learning). 
+The introduction slides can be accessed at [this URL website](https://fchouteau.github.io/isae-intro-to-cnns). 
 
 It is recommended to read it first as it contains the necessary information to run this from scratch.
 
-There are four notebooks at the root of this repository, those are the exercises
+There are five notebooks at the root of this repository, those are the exercises
 
 ## Where to run it ?
 
