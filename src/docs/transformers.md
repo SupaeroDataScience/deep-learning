@@ -3,27 +3,24 @@
 * [Home](https://supaerodatascience.github.io/deep-learning/)
 * [Github repository](https://github.com/SupaeroDataScience/deep-learning/)
 
-This class introduces attention mechanisms in detail and presents the Transformer architecture, with an example in NLP. It builds on the [NLP class](https://supaerodatascience.github.io/deep-learning/NLP.html).
+This class introduces attention mechanisms in detail and presents the Transformer architecture, with an example in NLP. It is very tied to the [NLP class](https://supaerodatascience.github.io/deep-learning/NLP.html).
 
 [Attention notebook source](https://github.com/SupaeroDataScience/deep-learning/blob/main/transformers/Neural_Self_Attention_.ipynb)
 
 [Attention notebook on Colab](https://colab.research.google.com/github/SupaeroDataScience/deep-learning/blob/main/transformers/Neural_Self_Attention_.ipynb)
 
-[Transformer notebook source](https://github.com/SupaeroDataScience/deep-learning/blob/main/transformers/Transformer_Architecture.ipynb)
+[Mini Transformer notebook source](https://github.com/SupaeroDataScience/deep-learning/blob/main/transformers/Mini_Transformer.ipynb)
 
-[Transformer notebook on Colab](https://colab.research.google.com/github/SupaeroDataScience/deep-learning/blob/main/transformers/Transformer_Architecture.ipynb)
+[Mini Transformer notebook on Colab](https://colab.research.google.com/github/SupaeroDataScience/deep-learning/blob/main/transformers/Mini_Transformer.ipynb)
 
 ## Additional Resources
 
 + [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)
++ [Illustrated Transformer notebook](https://github.com/SupaeroDataScience/deep-learning/blob/main/transformers/Transformer_Architecture_2025.ipynb), version [on Colab](https://colab.research.google.com/github/SupaeroDataScience/deep-learning/blob/main/transformers/Transformer_Architecture_2025.ipynb)
 + Vaswani, Ashish, et al. "Attention is all you need." Advances in Neural Information Processing Systems 30, 2017. [pdf](https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf)
 + Brown, Tom, et al. "Language models are few-shot learners." Advances in neural information processing systems 33 (2020): 1877-1901. [pdf](https://proceedings.neurips.cc/paper/2020/file/1457c0d6bfcb4967418bfb8ac142f64a-Paper.pdf)
 + Raffel, Colin, et al. "Exploring the limits of transfer learning with a unified text-to-text transformer." J. Mach. Learn. Res. 21.140 (2020): 1-67. [pdf](https://jmlr.org/papers/volume21/20-074/20-074.pdf)
-+ [t5 on HuggingFace](https://huggingface.co/t5-base)
-+ [c4 dataset](https://www.tensorflow.org/datasets/catalog/c4)
 + Hoffmann, Jordan, et al. "Training Compute-Optimal Large Language Models." arXiv preprint arXiv:2203.15556 (2022). [pdf](https://arxiv.org/pdf/2203.15556.pdf)
-+ Taylor, Ross, et al. "Galactica: A large language model for science." arXiv preprint arXiv:2211.09085 (2022). [pdf](https://arxiv.org/pdf/2211.09085.pdf)
-+ [ChatGPT](https://openai.com/blog/chatgpt/)
 
 ## Vision Transformers
 

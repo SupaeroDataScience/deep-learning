@@ -21,15 +21,16 @@ able to understand recent literature in deep learning, implement novel neural
 network architectures, use and understand the PyTorch library in many ways, and
 apply deep learning to different domains.
 
-## 2023 Schedule
+## 2025 Schedule
 
 Schedule | | |
 | --- | --- | --- |
-28/11 | [Artificial Neural Networks](ANN.html) | ANNs, backpropagation, Stochastic Gradient Descent |
-29/11 | [Deep Learning](deep.html) | layers, convolution, architectures, training |
-05/12 | [Deep Learning for Computer Vision, pt 1](vision.html) | Convolutional Neural Networks, satellite imagery |
-05/12 | [Deep Learning for Computer Vision, pt 2](vision.html) | |
-12/12 | [GANs](GAN.html) | VAEs, GANs, and Diffusion Models |
-19/12 | [RNNs](RNN.html) | Recurrent Neural Networks, LSTM, GRU |
-19/12 | [NLP](NLP.html) | Natural Language Processing, Transformers |
-09/01 | [Dimensionality Reduction](DR.html) | Autoencoders, t-SNE |
+12/11 | [Artificial Neural Networks](ANN.html) | ANNs, backpropagation, Stochastic Gradient Descent |
+12/11 | [Deep Learning](deep.html) | layers, convolution, architectures, training |
+18/11 | [Deep Learning for Computer Vision, pt 1](vision.html) | Convolutional Neural Networks, satellite imagery |
+18/11 | [Deep Learning for Computer Vision, pt 2](vision.html) | |
+25/11 | [Image generation](GAN.html) | VAEs, GANs, and Diffusion Models |
+02/12 | [RNNs](RNN.html) | Recurrent Neural Networks, LSTM, GRU |
+02/12 | [Transformers](NLP.html) | Transformers |
+09/12 | [Model Analysis](DR.html) | Autoencoders, t-SNE, SAEs |
+09/12 | [LLMs](NLP.html) | Large Language Models |
