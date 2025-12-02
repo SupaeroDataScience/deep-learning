@@ -6,6 +6,7 @@ Deep Learning section of the Algorithms in Machine Learning class at ISAE-Supaer
 
 Adapted from Emmanuel Rachelson's [Machine Learning class](https://github.com/erachelson/MLclass)
 
+
 ## Syllabus
 
 This class covers deep learning from a theoretical basis to example

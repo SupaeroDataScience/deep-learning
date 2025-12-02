@@ -5,6 +5,7 @@
 This repository contains the code and documentation of a "Introduction to CNNs" given at ISAE-SUPAERO on November 18th 2025
 
 The introduction slides can be accessed at [this URL website](https://fchouteau.github.io/isae-intro-to-cnns). 
+Class : https://fchouteau.github.io/isae-intro-to-cnns/1_intro_to_cnns.html#/
 
 It is recommended to read it first as it contains the necessary information to run this from scratch.
 
