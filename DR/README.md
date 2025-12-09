@@ -1,6 +1,8 @@
 # Model Analysis
 Previously dimensionality reduction
 
+* [Home](https://supaerodatascience.github.io/deep-learning/)
+* [Github repository](https://github.com/SupaeroDataScience/deep-learning/)
 
 [Model Analysis](https://colab.research.google.com/github/SupaeroDataScience/deep-learning/blob/main/DR/Model_Analysis.ipynb)
 
@@ -9,20 +11,11 @@ Previously dimensionality reduction
 
 ## Dimensionality Reduction resources
 
-To follow the notebooks with Google Colab, simply go to:
-https://github.com/SupaeroDataScience/
-- For class follow-up: https://colab.research.google.com/github/SupaeroDataScience/deep-learning/blob/main/DR/dimensionality_reduction_class-empty.ipynb
-- For completed notebook: https://colab.research.google.com/github/SupaeroDataScience/deep-learning/blob/main/DR/dimensionality_reduction_class.ipynb
+This class goes deeper in the mechanism and usage of Dimensionality Reduction. You will learn to exploit the effects of dimensionality on your machine learning models, with illustrated intuitions, and practical examples.
+You will start with an already very known technique in a linear setup, Principal Components Analysis, to move progressively towards non-linear manifold learning with t-SNE, to end up with Deep Learning techniques to reduce the dimension. Through concrete application of Autoencoders you will know what are their main interests and pitfalls, to make the best architecture choice given your problem to solve.
 
-This repository contains course materials for my Machine Learning class on the topic of Dimensionality Reduction:
-- <em>dimensionality_reduction_class.pdf</em> : course presentation with teaching content
-- <em>dimensionality_reduction_class.ipynb</em> : Python notebook illustrating the course notions
-- <em>dimensionality_reduction_class-empty.ipynb</em> : same Python notebook to follow with students during class
+[Lecture notes](https://github.com/SupaeroDataScience/deep-learning/blob/main/DR/dimensionality_reduction_class.pdf)
 
-Then click on "Copy to Drive" to be able to execute it and save your copy. The first section of the notebook is there to initialize the environment from Google Colab.
+[Notebook for class exercises](https://github.com/SupaeroDataScience/deep-learning/blob/main/DR/dimensionality_reduction_class-empty.ipynb) ([colab](https://colab.research.google.com/github/SupaeroDataScience/deep-learning/blob/main/DR/dimensionality_reduction_class-empty.ipynb))
 
-### Homework follow-up
-
-After the session, you will have tried different ways to learn a representation for handwritten digits, from PCA, t-SNE up to simple and more complex Autoencoders. To continue work at home, we ask you to:
-- Study the paper entitled "Representation Learning: A Review and New Perspectives", in the bibliography folder, to expand your view on the types of methods, and have a synthesis of the main stakes of this field.
-- Study the paper entitled "Bootstrap Your Own Latent: A New Approach to Self-Supervised Learning", in the bibliography folder, to discover one new approach among the most recent perspectives, and implement it for the dataset used in class. What are the advantages and drawbacks that you observe compared to the methods we implemented in the class (PCA, t-SNE, Autoencoders) ?
+[Solutions](https://github.com/SupaeroDataScience/deep-learning/blob/main/DR/dimensionality_reduction_class.ipynb) ([colab](https://colab.research.google.com/github/SupaeroDataScience/deep-learning/blob/main/DR/dimensionality_reduction_class.ipynb))
