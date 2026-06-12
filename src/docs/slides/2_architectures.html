@@ -1,17 +1,26 @@
----
-title: Deep Learning Architectures
-theme: evo
-highlightTheme: vs
-separator: <!--s-->
-verticalSeparator: <!--v-->
-revealOptions:
-    transition: 'fade'
-    transitionSpeed: 'default'
-    controls: true
-    slideNumber: true
-    width: '100%'
-    height: '100%'
----
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Deep Learning Architectures</title>
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./dist/reveal.css" />
+    <link rel="stylesheet" href="./static/css/reset.css" />
+    <link rel="stylesheet" href="./static/css/evo.css" />
+    <!-- <link rel="stylesheet" href="/_assets/evo" id="theme" /> -->
+    <link rel="stylesheet" href="./css/highlight/vs.css" />
+
+    <link rel="stylesheet" href="././_assets/static/css/evo.css" />
+    <link rel="stylesheet" href="././_assets/static/css/reset.css" />
+
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides"><section  data-markdown><script type="text/template">
 
 ## Deep Learning Architectures
 
@@ -21,7 +30,7 @@ Convolutional Neural Networks, NAS
 
 Dennis WILSON
 
-<!--s-->
+</script></section><section  data-markdown><script type="text/template">
 
 ### Putting the pieces together
 
@@ -31,7 +40,7 @@ components like Dropout, which we include as a sort of "layer" in our
 architecture. These and more are all the base components of neural networks
 which can be mixed and matched to create different neural architectures.
 
-<!--s-->
+</script></section><section  data-markdown><script type="text/template">
 
 ## LeNet
 
@@ -41,7 +50,7 @@ LeNet is often considered the first modern deep convolutional neural network.
     
 LeCun, Yann, et al. "Gradient-based learning applied to document recognition." Proceedings of the IEEE 86.11 (1998): 2278-2324.
 
-<!--s-->
+</script></section><section  data-markdown><script type="text/template">
 
 ## AlexNet
 
@@ -56,7 +65,7 @@ information processing systems. 2012.
 
 https://github.com/pytorch/vision/blob/master/torchvision/models/alexnet.py
 
-<!--s-->
+</script></section><section  data-markdown><script type="text/template">
 
 ## VGG (16)
 
@@ -69,7 +78,7 @@ novel and built on advances in weight optimization.
     
 Simonyan, Karen, and Andrew Zisserman. "Very deep convolutional networks for large-scale image recognition." ICLR, 2015.
 
-<!--s-->
+</script></section><section  data-markdown><script type="text/template">
 
 ## InceptionNet
 
@@ -83,7 +92,7 @@ Szegedy, Christian, et al. "Rethinking the inception architecture for computer v
 
 https://github.com/pytorch/vision/blob/master/torchvision/models/inception.py
 
-<!--s-->
+</script></section><section  data-markdown><script type="text/template">
 
 ## GoogLeNet
 
@@ -97,7 +106,7 @@ Szegedy, Christian, et al. "Going deeper with convolutions." Proceedings of the 
 
 https://github.com/pytorch/vision/blob/master/torchvision/models/googlenet.py
 
-<!--s-->
+</script></section><section  data-markdown><script type="text/template">
 
 ## ResNet
 
@@ -114,7 +123,7 @@ He, Kaiming, et al. "Deep residual learning for image recognition." Proceedings 
 
 https://github.com/pytorch/vision/blob/master/torchvision/models/resnet.py
 
-<!--s-->
+</script></section><section  data-markdown><script type="text/template">
 
 ## Differentiable Architecture Search
 
@@ -128,7 +137,7 @@ Liu, Hanxiao, Karen Simonyan, and Yiming Yang. "DARTS: Differentiable
 Architecture Search." International Conference on Learning
 Representations. 2018. [pdf](https://arxiv.org/pdf/1806.09055.pdf)
 
-<!--s-->
+</script></section><section  data-markdown><script type="text/template">
 
 ## NSGA-Net
 
@@ -142,10 +151,77 @@ Lu, Zhichao, et al. "Nsga-net: neural architecture search using multi-objective
 genetic algorithm." Proceedings of the Genetic and Evolutionary Computation
 Conference. 2019. [code](https://github.com/ianwhale/nsga-net)
 
-<!--s-->
+</script></section><section  data-markdown><script type="text/template">
 
 ## Exercise
 
 Look at one of the torchvision implementations of models and the reference paper
 to understand how the torch version is implemented. Train a network of your
 choice on CIFAR10 using ignite.
+</script></section></div>
+    </div>
+    <!-- <div id="footer-container" style="display:none;"> -->
+    <div id="footer-container">
+        <div id="footer">
+            Deep Learning - Fall 2020
+            <br />
+            <a href="https://supaerodatascience.github.io/deep-learning/">https://supaerodatascience.github.io/deep-learning/</a>
+            <br />
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License"
+                    style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+        </div>
+    </div>
+    <script src="./dist/reveal.js"></script>
+
+    <script src="./plugin/markdown/markdown.js"></script>
+    <script src="./plugin/highlight/highlight.js"></script>
+    <script src="./plugin/zoom/zoom.js"></script>
+    <script src="./plugin/notes/notes.js"></script>
+    <script src="./plugin/math/math.js"></script>
+    <script>
+        function extend() {
+            var target = {};
+            for (var i = 0; i < arguments.length; i++) {
+                var source = arguments[i];
+                for (var key in source) {
+                    if (source.hasOwnProperty(key)) {
+                        target[key] = source[key];
+                    }
+                }
+            }
+            return target;
+        }
+
+        // default options to init reveal.js
+        var defaultOptions = {
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+            transition: 'default', // none/fade/slide/convex/concave/zoom
+            plugins: [
+                RevealMarkdown,
+                RevealHighlight,
+                RevealZoom,
+                RevealNotes,
+                RevealMath
+            ]
+        };
+
+        // options from URL query string
+        var queryOptions = Reveal().getQueryHash() || {};
+
+        var options = extend(defaultOptions, {"transition":"fade","transitionSpeed":"default","controls":true,"slideNumber":true,"width":"100%","height":"100%"}, queryOptions);
+    </script>
+
+
+    <script>
+        Reveal.initialize(options);
+        var footer = $('#footer-container').html();
+        $('div.reveal').append(footer);
+        var logo = $('#logo-container').html();
+        $('div.reveal').append(logo);
+    </script>
+</body>
+
+</html>

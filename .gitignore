@@ -132,6 +132,6 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# Reveal
+# Reveal slides are now PRE-BUILT and committed under src/docs/slides/
+# (rebuild them with `make slides`). Only the mkdocs build output is ignored.
 src/site
-slides
