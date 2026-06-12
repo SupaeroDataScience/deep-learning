@@ -20,16 +20,20 @@ able to understand recent literature in deep learning, implement novel neural
 network architectures, use and understand the PyTorch library in many ways, and
 apply deep learning to different domains.
 
-## 2025 Schedule
+## 2026-2027 Schedule
 
 Schedule | | |
 | --- | --- | --- |
-12/11 | [Artificial Neural Networks](ANN.html) | ANNs, backpropagation, Stochastic Gradient Descent |
-12/11 | [Deep Learning](deep.html) | layers, convolution, architectures, training |
-18/11 | [Deep Learning for Computer Vision, pt 1](vision.html) | Convolutional Neural Networks, satellite imagery |
-18/11 | [Deep Learning for Computer Vision, pt 2](vision.html) | |
-25/11 | [Image generation](GAN.html) | VAEs, GANs, and Diffusion Models |
-02/12 | [RNNs](RNN.html) | Recurrent Neural Networks, LSTM, GRU |
-02/12 | [Transformers](NLP.html) | Transformers |
-09/12 | [Model Analysis](DR.html) | Autoencoders, t-SNE, SAEs |
-09/12 | [LLMs](NLP.html) | Large Language Models |
+13/10 | [Artificial Neural Networks](ANN.html) | ANNs, backpropagation, Stochastic Gradient Descent |
+13/10 | [Deep Learning](deep.html) | layers, convolution, architectures, training |
+03/11 | [Deep Learning for Computer Vision, pt 1](vision.html) | Convolutional Neural Networks |
+03/11 | [Deep Learning for Computer Vision, pt 2](vision.html) | CNNs and satellite imagery |
+10/11 | [Autoencoders and Self-Supervised Learning](DR.html) | autoencoders, SSL |
+10/11 | [Dimensionality Reduction](DR.html) | t-SNE, SAEs |
+17/11 | [Image generation, pt 1](GAN.html) | VAEs and GANs |
+17/11 | [Image generation, pt 2](GAN.html) | Diffusion Models |
+24/11 | [RNNs](RNN.html) | Recurrent Neural Networks, LSTM, GRU |
+24/11 | Deep Learning in Practice | training, debugging, and deploying deep models |
+30/11 | [Transformers](transformers.html) | the Transformer architecture |
+01/12 | [LLMs](NLP.html) | Large Language Models |
+01/12 | [Retrieval-Augmented Generation](NLP.html) | RAG |
