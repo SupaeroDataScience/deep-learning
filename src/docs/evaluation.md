@@ -1,6 +1,6 @@
 # Deep Learning Demo
 
-Evaluation 2025-2026
+Evaluation 2026-2027
 
 ## Principle and Pedagogical Objective
 
@@ -58,9 +58,9 @@ You must submit:
 
 | Date | Event |
 |------|-------|
-| 05/01/26 | Subject selection |
-| 30/01/26 | Submission deadline |
-| 02/02/26 | Peer evaluation |
+| 07/12/26 | Subject selection (project introduction) |
+| 15/01/27 | Submission deadline |
+| 18/01/27 | Peer evaluation |
 
 It is important to submit the links beforehand to ensure that everyone has a video and demo submitted before the peer evaluation.
 
