@@ -1,4 +1,4 @@
-site_name: Deep Learning
+site_name: SDD
 site_description: Deep Learning section of the Algorithms in Machine Learning class at ISAE-Supaero
 site_url: https://supaerodatascience.github.io/deep-learning/
 site_dir: site
@@ -18,22 +18,50 @@ theme:
 repo_name: SupaeroDataScience/deep-learning
 repo_url: https://github.com/SupaeroDataScience/deep-learning
 
+
 nav:
-- Overview: index.md
-- Neural Networks and Deep Learning:
-  - Artificial Neural Networks: ANN.md
-  - Deep Learning: deep.md
-  - Deep Learning in practice: practice.md
-- Deep Learning for Computer Vision: 
-  - CNN: vision.md
-  - Dimensionality Reduction: DR.md
-  - Image Generation: GAN.md
-- Sequential Data and NLP:
-  - RNNs: RNN.md
-  - Transformers: transformers.md
-  - LLM: NLP.md
-  - RAG: RAG.md
-- Evaluation: evaluation.md
+- Home: https://supaerodatascience.github.io/index.html
+
+- Classes:
+  - Fundamentals of Decision Making: https://supaerodatascience.github.io/310/index.html
+  
+  - Machine Learning: 
+    - Overview: https://supaerodatascience.github.io/aml.html
+    - Machine Learning: https://supaerodatascience.github.io/machine-learning/
+
+    - Deep Larning: 
+      - Overview: index.md
+      - Neural Networks and Deep Learning:
+        - Artificial Neural Networks: ANN.md
+        - Deep Learning: deep.md
+        - Deep Learning in practice: practice.md
+      - Deep Learning for Computer Vision: 
+        - CNN: vision.md
+        - Dimensionality Reduction: DR.md
+        - Image Generation: GAN.md
+      - Sequential Data and NLP:
+        - RNNs: RNN.md
+        - Transformers: transformers.md
+        - LLM: NLP.md
+        - RAG: RAG.md
+      - Evaluation: evaluation.md    
+    
+    - Reinforcement learning: https://supaerodatascience.github.io/reinforcement-learning/
+
+  - Data Engineering: https://supaerodatascience.github.io/DE/
+
+  - Applied Data Science: https://supaerodatascience.github.io/313/index.html
+
+  - Seminars: https://supaerodatascience.github.io/seminars.html
+
+- Resources:
+  - For current students: https://supaerodatascience.github.io/infostudents.html
+  - For prospective students: https://supaerodatascience.github.io/students.html
+  - For partners: https://supaerodatascience.github.io/partners.html
+  - Contact: https://supaerodatascience.github.io/contact.html
+
+
+
 
 markdown_extensions:
 - markdown.extensions.codehilite:
