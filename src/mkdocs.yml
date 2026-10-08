@@ -29,7 +29,7 @@ nav:
     - Overview: https://supaerodatascience.github.io/aml.html
     - Machine Learning: https://supaerodatascience.github.io/machine-learning/
 
-    - Deep Larning: 
+    - Deep Learning: 
       - Overview: index.md
       - Neural Networks and Deep Learning: ANN.md
       - Deep Learning for Computer Vision: 

@@ -18,13 +18,13 @@ apply deep learning to different domains.
 
 Schedule | | |
 | --- | --- | --- |
-13/10 AM| [Artificial Neural Networks](ANN.md) | ANNs, backpropagation, Stochastic Gradient Descent |
-13/10 PM| [Deep Learning](deep.md) | layers, convolution, architectures, training |
+13/10 AM| [Artificial Neural Networks](ANN.md#reseaux-de-neurones-artificiels) | ANNs, backpropagation, Stochastic Gradient Descent |
+13/10 PM| [Deep Learning](ANN.md#apprentissage-profond) | activation, regularization, training |
 03/11 AM| [Deep Learning for Computer Vision, pt 1](vision.md) | Convolutional Neural Networks |
-03/11 PM| [Deep Learning for Computer Vision, pt 2](vision.md) | CNNs and satellite imagery |
+03/11 PM| [Deep Learning for Computer Vision, pt 2](vision.md) | CNN Architectures, Transfer learning|
 10/11 AM| [Autoencoders and Self-Supervised Learning](DR.md) | autoencoders, SSL |
 10/11 PM| [Dimensionality Reduction](DR.md) | t-SNE, SAEs |
-17/11 AM| [Deep Learning in Practice](practice.md) | training, debugging, and deploying deep models |
+17/11 AM| [Deep Learning in Practice](ANN.md) | training, debugging, and deploying deep models |
 17/11 PM| [RNNs](RNN.md) | Recurrent Neural Networks, LSTM, GRU |
 24/11 AM| [Image generation, pt 1](GAN.md) | VAEs and GANs |
 24/11 PM| [Image generation, pt 2](GAN.md) | Diffusion Models |
