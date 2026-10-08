@@ -31,10 +31,7 @@ nav:
 
     - Deep Larning: 
       - Overview: index.md
-      - Neural Networks and Deep Learning:
-        - Artificial Neural Networks: ANN.md
-        - Deep Learning: deep.md
-        - Deep Learning in practice: practice.md
+      - Neural Networks and Deep Learning: ANN.md
       - Deep Learning for Computer Vision: 
         - CNN: vision.md
         - Dimensionality Reduction: DR.md
