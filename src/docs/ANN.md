@@ -24,7 +24,7 @@ Une partie importante est consacrée au sous-apprentissage et au sur-apprentissa
 L’objectif est donc de comprendre non seulement comment entraîner un réseau de neurones, mais surtout comment améliorer son apprentissage, éviter le sur-apprentissage et choisir les bons paramètres pour obtenir un modèle qui généralise correctement.
 
 
-[Slides](ANN/todo.pdf)
+[Slides](ANN/2-DL.pdf)
 
 
 ## Quelques ressources
