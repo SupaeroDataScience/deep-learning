@@ -5,7 +5,7 @@
 
 Ce cours propose une introduction progressive aux réseaux de neurones artificiels et au Deep Learning. Il commence par les bases de l’apprentissage supervisé, la régression linéaire et logistique, puis présente le fonctionnement des neurones artificiels et des perceptrons multicouches.
 
-[Slides](ANN/todo.pdf)
+[Slides](ANN/1-AN.pdf)
 
 
 Pour le BE, vous pouvez ouvrir le fhichier ci-dessous avec jupyter notebook ; vous pouvez également réaliser le BE sous Google Colab.
