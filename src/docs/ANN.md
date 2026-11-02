@@ -8,7 +8,7 @@ Ce cours propose une introduction progressive aux réseaux de neurones artificie
 [Slides](ANN/1-AN.pdf)
 
 
-Pour le BE, vous pouvez ouvrir le fhichier ci-dessous avec jupyter notebook ; vous pouvez également réaliser le BE sous Google Colab.
+Pour le BE, vous pouvez ouvrir le fichier ci-dessous avec jupyter notebook ; vous pouvez également réaliser le BE sous Google Colab.
 
 [BE Réseaux de Neurones avec Numpy](ANN/BE_NN_Numpy.ipynb)
 
