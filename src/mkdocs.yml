@@ -34,7 +34,8 @@ nav:
       - Neural Networks and Deep Learning: ANN.md
       - Deep Learning for Computer Vision: 
         - CNN: vision.md
-        - Dimensionality Reduction: DR.md
+        - Self-Supervised Learning: SSL.md
+        - Interpretability: xai.md
         - Image Generation: GAN.md
       - Sequential Data and NLP:
         - RNNs: RNN.md
