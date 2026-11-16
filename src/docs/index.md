@@ -24,7 +24,7 @@ Schedule | | |
 03/11 PM| [Deep Learning for Computer Vision, pt 2](vision.md) | CNN Architectures, Transfer learning, U-Net|
 10/11 AM| [Autoencoders and Self-Supervised Learning](SSL.md) | autoencoders, SSL |
 10/11 PM| [Interpretability](xai.md) | t-SNE, GradCAM, SAEs |
-17/11 AM| [Deep Learning in Practice](ANN.md) | training, debugging, and deploying deep models |
+17/11 AM| [Deep Learning in Practice](ANN.md#apprentissage-profond-en-pratique) | training, debugging, and deploying deep models |
 17/11 PM| [RNNs](RNN.md) | Recurrent Neural Networks, LSTM, GRU |
 24/11 AM| [Image generation, pt 1](GAN.md) | VAEs and GANs |
 24/11 PM| [Image generation, pt 2](GAN.md) | Diffusion Models |

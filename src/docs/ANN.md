@@ -27,6 +27,13 @@ L’objectif est donc de comprendre non seulement comment entraîner un réseau 
 [Slides](ANN/2-DL.pdf)
 
 
+## Apprentissage profond en pratique
+
+Formez des groupes de 3-4 personnes et connectez-vous sur [cette page](https://deep-learning.acarlier.fr/) !
+
+
+
+
 ## Quelques ressources
 
 Le livre [Deep Learning](https://www.deeplearningbook.org/) de Goodfellow et al. est disponible en ligne gratuitement et est une très bonne lecture.
