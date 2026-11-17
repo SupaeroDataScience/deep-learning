@@ -32,7 +32,7 @@ L’objectif est donc de comprendre non seulement comment entraîner un réseau 
 Formez des groupes de 3-4 personnes et connectez-vous sur [cette page](https://deep-learning.acarlier.fr/) !
 
 
-
+[Slides](Practice/5-DLinPractice.pdf)
 
 ## Quelques ressources
 
