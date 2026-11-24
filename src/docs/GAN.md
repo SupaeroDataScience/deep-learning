@@ -5,7 +5,7 @@ In this class, we cover three types of generative models: Variational Autoencode
 
 [Cours VAE](GenAI/VAE_slides.pdf)
 
-[BE VAEs](GenAI/BE_Autoencodeurs_VAE_PyTorch_Sujet.ipynb)
+[BE VAEs](GenAI/BE_Autoencodeurs_VAE_PyTorch_Sujet.ipynb), [Colab version](https://colab.research.google.com/github/SupaeroDataScience/deep-learning/blob/main/src/docs/GenAI/BE_Autoencodeurs_VAE_PyTorch_Sujet.ipynb)
 
 
 
@@ -17,5 +17,5 @@ In this class, we cover three types of generative models: Variational Autoencode
 
 [Cours modèles de diffusion](GenAI/Diffusion_Course.pdf)
 
-[BE modèles de diffusion](GenAI/Score_Based_Generative_Modeling.ipynb)
+[BE modèles de diffusion](GenAI/Score_Based_Generative_Modeling.ipynb), [Colab version](https://colab.research.google.com/github/SupaeroDataScience/deep-learning/blob/main/GAN/Score_Based_Generative_Modeling.ipynb)
 
